@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+  </head>
+  <body>
+    <form action="proses_pendaftaran.php" method="get">
+      <fieldset>
+        <div class="form-group">
+          <label for="nim">Nim:</label>
+          <input type="text" name="nim" id="nim">
+        </div>
+        <div class="form-group">
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" name="nama" id="nama">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="ttl">Tempat, Tanggal Lahir:</label>
+          <input type="text" name="tempat" id="tempat">
+          <input type="date" name="tanggal" id="tanggal">
+        </div>
+        <div class="form-group">
+          <label for="alamat">Alamat:</label>
+          <textarea name="alamat" id="alamat" cols="20" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Laki-Laki"> <label for="jenis_kelamin">Laki-Laki</label>
+          <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Perempuan"> <label for="jenis_kelamin">Perempuan</label>
+        </div>
+        <div class="form-group">
+          <button type="submit">Kirim</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
